@@ -11,11 +11,11 @@ namespace FactorioModulePlaner
         public decimal EffectiveCraftingSpeed => 
             Boosters.Aggregate(BaseCraftingSpeed, (speed, booster) => speed * booster.CraftingSpeedMultiplier);
 
-        public Watts BasePowerConsuption { get; set; }
+        public Watt BasePowerConsuption { get; set; }
 
-        public Watts EffectivePowerConsuption =>
+        public Watt EffectivePowerConsuption =>
             Boosters.Aggregate(BasePowerConsuption, (power, booster) => power * booster.PowerMultiplier);
 
-        public ICollection<IBooster> Boosters { get; } = new Collection<IBooster>();
+        public ICollection<Booster> Boosters { get; } = new Collection<Booster>();
     }
 }

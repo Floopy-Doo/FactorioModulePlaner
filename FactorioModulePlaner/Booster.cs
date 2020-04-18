@@ -1,6 +1,6 @@
 ﻿namespace FactorioModulePlaner
 {
-    public class IBooster
+    public class Booster
     {
         public decimal PowerMultiplier { get; set; }
 

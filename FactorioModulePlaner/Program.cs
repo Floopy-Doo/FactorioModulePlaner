@@ -13,7 +13,7 @@ namespace FactorioModulePlaner
             var Items = new[] {ItemIronOre, ItemIronPlate};
 
             var crafterFurnace = new Crafter
-                {BaseCraftingSpeed = 1.5m, BasePowerConsuption = Watts.CreateKiloWats(180)};
+                {BaseCraftingSpeed = 1.5m, BasePowerConsuption = Watt.FromKiloWatts(180)};
             var Crafters = new[] {crafterFurnace};
 
             var Recepies = new[]
@@ -24,6 +24,8 @@ namespace FactorioModulePlaner
                     UsedCrafters = new[] {crafterFurnace}
                 }
             };
+
+
         }
     }
 }

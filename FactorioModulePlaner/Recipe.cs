@@ -14,6 +14,6 @@ namespace FactorioModulePlaner
 
         public IEnumerable<Crafter> UsedCrafters { get; set; } = new Collection<Crafter>();
 
-        public IEnumerable<IBooster> AllowedBoosters { get; set; } = new Collection<IBooster>();
+        public IEnumerable<Booster> AllowedBoosters { get; set; } = new Collection<Booster>();
     }
 }
